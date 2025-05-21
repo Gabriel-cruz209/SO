@@ -1,0 +1,178 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: #fefefe;
+  color: #222;
+  line-height: 1.6;
+  padding: 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Container central */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Cabeçalho do site */
+header {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 3rem;
+  font-weight: 900;
+  color: #111;
+  letter-spacing: -0.04em;
+}
+
+header nav {
+  margin-top: 12px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #555;
+  margin-right: 18px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+header nav a:hover,
+header nav a:focus {
+  color: #0077cc;
+  outline: none;
+}
+
+/* Artigos */
+article {
+  margin-bottom: 48px;
+  border-bottom: 1px solid #e3e3e3;
+  padding-bottom: 36px;
+}
+
+article:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+article h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #222;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+article h2:hover,
+article h2:focus {
+  color: #0077cc;
+  outline: none;
+}
+
+article p {
+  font-size: 1.125rem;
+  color: #444;
+  margin-bottom: 18px;
+}
+
+/* Data e autor */
+.article-meta {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+/* Link "Leia mais" */
+.read-more {
+  font-weight: 600;
+  color: #0077cc;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.read-more:hover,
+.read-more:focus {
+  color: #004a99;
+  text-decoration: underline;
+  outline: none;
+}
+
+/* Sidebar simples */
+.sidebar {
+  background: #f9f9f9;
+  padding: 24px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-bottom: 40px;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  color: #999;
+  font-size: 0.9rem;
+  border-top: 1px solid #ddd;
+  margin-top: 60px;
+}
+
+/* Links no footer */
+footer a {
+  color: #999;
+  text-decoration: none;
+  margin: 0 8px;
+  transition: color 0.3s ease;
+}
+
+footer a:hover,
+footer a:focus {
+  color: #0077cc;
+  outline: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.25rem;
+  }
+
+  article h2 {
+    font-size: 1.5rem;
+  }
+
+  article p {
+    font-size: 1rem;
+  }
+
+  .container {
+    padding: 0 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  header nav a {
+    margin-right: 12px;
+    font-size: 0.9rem;
+  }
+}
